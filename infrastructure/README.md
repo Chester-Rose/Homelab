@@ -12,7 +12,7 @@ Build a domain environment to practice Windows Server administration and support
 
 ## Topology
 
-!\[Topology](../diagrams/homelab-topology.png)
+(diagrams/networkdiagram.png)
 
 |VM|Role|IP|Notes|
 |-|-|-|-|
@@ -24,7 +24,7 @@ Build a domain environment to practice Windows Server administration and support
 ## Build Steps (high level)
 
 1. Created internal network in VirtualBox named `intnet`.
-2. Installed Windows Server 2019, renamed to DC01, set static IP 172.16.0.1.
+2. Installed Windows Server 2025, renamed to DC01, set static IP 172.16.0.1.
 3. Installed AD DS role, promoted to Domain Controller for `homelab.local`.
 4. Installed and configured DNS (forward and reverse zones).
 5. Installed and configured DHCP with scope 172.16.0.100–172.16.0.200.
@@ -45,7 +45,7 @@ See [troubleshooting.md](troubleshooting.md) for issues encountered and fixes.
 <table>
   <tr>
     <td width="100%" align="center">
-      <a href="screenshots/server-and-client.png" target="\_blank">
+      <a href="screenshots/server-and-client.png" target="\\\_blank">
         <img src="screenshots/server-and-client.png" width="100%" alt="Server and Client Side-by-Side">
       </a>
     </td>
@@ -65,12 +65,12 @@ See [troubleshooting.md](troubleshooting.md) for issues encountered and fixes.
 <table>
   <tr>
     <td width="50%" align="center" valign="top">
-      <a href="screenshots/DC-ipconfig.png" target="\_blank">
+      <a href="screenshots/DC-ipconfig.png" target="\\\_blank">
         <img src="screenshots/DC-ipconfig.png" width="100%" alt="DC IP Configuration">
       </a>
     </td>
     <td width="50%" align="center" valign="top">
-      <a href="screenshots/client-details.png" target="\_blank">
+      <a href="screenshots/client-details.png" target="\\\_blank">
         <img src="screenshots/client-details.png" width="100%" alt="VirtualBox Client Settings">
       </a>
     </td>
@@ -94,17 +94,17 @@ See [troubleshooting.md](troubleshooting.md) for issues encountered and fixes.
 <table>
   <tr>
     <td width="33%" align="center" valign="top">
-      <a href="screenshots/AD-admins.png" target="\_blank">
+      <a href="screenshots/AD-admins.png" target="\\\_blank">
         <img src="screenshots/AD-admins.png" width="100%" alt="ADUC OU Structure">
       </a>
     </td>
     <td width="33%" align="center" valign="top">
-      <a href="screenshots/admin-securitygroups.png" target="\_blank">
+      <a href="screenshots/admin-securitygroups.png" target="\\\_blank">
         <img src="screenshots/admin-securitygroups.png" width="100%" alt="Admin User Properties">
       </a>
     </td>
     <td width="33%" align="center" valign="top">
-      <a href="screenshots/AD-users.png" target="\_blank">
+      <a href="screenshots/AD-users.png" target="\\\_blank">
         <img src="screenshots/AD-users.png" width="100%" alt="Bulk Users">
       </a>
     </td>
@@ -112,7 +112,7 @@ See [troubleshooting.md](troubleshooting.md) for issues encountered and fixes.
   <tr>
     <td width="33%" valign="top">
       <b>OU Structure</b><br>
-      Custom Organizational Units (<code>\_ADMINS</code>, <code>\_USERS</code>) created to separate administrative accounts from standard users.
+      Custom Organizational Units (<code>\\\_ADMINS</code>, <code>\\\_USERS</code>) created to separate administrative accounts from standard users.
     </td>
     <td width="33%" valign="top">
       <b>Privilege Assignment</b><br>
@@ -120,7 +120,7 @@ See [troubleshooting.md](troubleshooting.md) for issues encountered and fixes.
     </td>
     <td width="33%" valign="top">
       <b>Bulk User Creation</b><br>
-      Utilized PowerShell to automate the creation of dummy users into the <code>\_USERS</code> OU for testing scale.
+      Utilized PowerShell to automate the creation of dummy users into the <code>\\\_USERS</code> OU for testing scale.
     </td>
   </tr>
 </table>
@@ -132,12 +132,12 @@ See [troubleshooting.md](troubleshooting.md) for issues encountered and fixes.
 <table>
   <tr>
     <td width="50%" align="center" valign="top">
-      <a href="screenshots/DHCP-scope.png" target="\_blank">
+      <a href="screenshots/DHCP-scope.png" target="\\\_blank">
         <img src="screenshots/DHCP-scope.png" width="100%" alt="DHCP Scope">
       </a>
     </td>
     <td width="50%" align="center" valign="top">
-      <a href="screenshots/leases.png" target="\_blank">
+      <a href="screenshots/leases.png" target="\\\_blank">
         <img src="screenshots/leases.png" width="100%" alt="DHCP Lease">
       </a>
     </td>
